@@ -46,13 +46,8 @@ body {
 .heading-primary {
     color: white;
     text-transform: uppercase;
-}
-
-.heading-primary-main {
-    display: block;
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 5px;
+    backface-visibility: hidden;
+    /*determines the back part is visible or hidden and is used to correct the auomating shaking*/
 }
 
 .text-box {
@@ -60,6 +55,16 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    animation-name: moveInleft;
+    animation-duration: 2s;
 }
 
 .heading-primary-sub {
@@ -67,4 +72,64 @@ body {
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 10px;
+    animation-name: moveInright;
+    animation-duration: 2s;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        /*to animate in x axis */
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /* looks the way exactly it is right now */
+    }
+}
+
+@keyframes moveInright {
+    0% {
+        opacity: 0;
+        transform: translateX(+100px);
+        /*to animate in x axis */
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /* looks the way exactly it is right now */
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    margin-top: 60px;
+}
+
+.btn-white {
+    background-color: white;
+    color: gray;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
