@@ -16,7 +16,7 @@
     transform: translateX(-100px);
     /*to animate in x axis */ }
   80% {
-    transform: translateX(10px); }
+    transform: translateX(30px); }
   100% {
     opacity: 1;
     transform: translate(0);
@@ -104,6 +104,17 @@ body {
     transform: skewY(2deg) skewX(2deg) scale(1.1);
     text-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3); }
 
+.heading-tertiary {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
+.paragraph {
+  font-size: 1rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 1.8rem; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -154,6 +165,25 @@ body {
 .btn-animated {
   animation: moveInBottom .5s ease-out 1.5s;
   animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  display: inline-block;
+  font-size: 1rem;
+  color: #09a809;
+  text-decoration: none;
+  border-bottom: 3px solid #09a809;
+  padding: 3px;
+  transition: all .3s; }
+
+.btn-text:hover {
+  background-color: #09a809;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); }
 
 .header {
   height: 95vh;

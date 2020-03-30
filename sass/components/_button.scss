@@ -47,3 +47,26 @@
         animation-fill-mode: backwards;
     }
 }
+
+.btn-text {
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-size: 1rem;
+        color: rgb(9, 168, 9);
+        text-decoration: none;
+        border-bottom: 3px solid rgb(9, 168, 9);
+        padding: 3px;
+        transition: all .3s;
+    }
+    &:hover {
+        background-color: rgb(9, 168, 9);
+        color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        transform: translateY(-2px);
+    }
+    &:active {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+        transform: translateY(-2px);
+    }
+}
