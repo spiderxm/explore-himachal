@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: grey;
     margin: 0 auto;
     // left and right margin are auto and top and bottom margin is zero
     //last row also gets margin bottom but we want to remove that so by using not sudo selector
@@ -9,7 +8,6 @@
     }
     @include clearfix;
     [class^="col-"] {
-        background-color: pink;
         float: left;
         &:not(:last-child) {
             margin-right: $horizontal-gutter;

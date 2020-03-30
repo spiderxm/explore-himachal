@@ -48,3 +48,19 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.heading-secondary {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, rgb(134, 194, 134), rgb(4, 160, 4));
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+    &:hover {
+        transform: skewY(2deg) skewX(2deg) scale(1.1);
+        text-shadow: 5px 10px 20px rgba(black, .3);
+    }
+}
