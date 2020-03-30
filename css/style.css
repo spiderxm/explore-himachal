@@ -218,3 +218,31 @@ body {
     width: calc(2*(100% - 3*(60px))/4 + 60px); }
   .row .col-3-of-4 {
     width: calc(3*(100% - 3*(60px))/4 + 2*60px); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    position: absolute;
+    transition: all .2s;
+    outline-offset: 20px;
+    z-index: 10; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -20px; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 20px; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 100px; }
+    .composition__photo:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.6);
+      z-index: 20;
+      outline: 15px solid green;
+      border-radius: 10; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.8); }
