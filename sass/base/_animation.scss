@@ -1,0 +1,47 @@
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        /*to animate in x axis */
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /* looks the way exactly it is right now */
+    }
+}
+
+@keyframes moveInright {
+    0% {
+        opacity: 0;
+        transform: translateX(+100px);
+        /*to animate in x axis */
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /* looks the way exactly it is right now */
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        /*to animate in x axis */
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* looks the way exactly it is right now */
+    }
+}

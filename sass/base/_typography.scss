@@ -1,0 +1,50 @@
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 50px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /*all children will inherit the font */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    /*determines the back part is visible or hidden and is used to correct the auomating shaking*/
+    &-main {
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 5px;
+        animation-name: moveInleft;
+        animation-duration: 2s;
+    }
+    &-sub {
+        display: block;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 10px;
+        animation-name: moveInright;
+        animation-duration: 2s;
+    }
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
