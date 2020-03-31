@@ -33,7 +33,7 @@
 }
 
 .book {
-    background-image: linear-gradient(105deg, rgba(white, .7) 0%, rgba(white, .7) 50%, rgba(blue, .0) 50%), url('../img/nat-10.jpg');
+    background-image: linear-gradient(105deg, rgba(white, .7) 0%, rgba(white, .7) 50%, rgba(blue, .0) 50%), url('../img/form.jpg');
     background-size: 100%;
     height: 500px;
     border-radius: 10px;
@@ -48,7 +48,7 @@
     background-color: rgb(39, 36, 36);
     text-transform: uppercase;
     text-align: center;
-    height: 50px;
+    height: 100px;
     position: relative;
     &_brandname {
         position: absolute;
