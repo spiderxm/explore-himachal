@@ -43,3 +43,23 @@
         padding: 60px;
     }
 }
+
+.footer {
+    background-color: rgb(39, 36, 36);
+    text-transform: uppercase;
+    text-align: center;
+    height: 50px;
+    position: relative;
+    &_brandname {
+        position: absolute;
+        left: 50%;
+        text-size: 30px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+        cursor: pointer;
+        &_text {
+            color: white;
+        }
+    }
+}

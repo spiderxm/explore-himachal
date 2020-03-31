@@ -159,6 +159,23 @@ body {
     width: 50%;
     padding: 60px; }
 
+.footer {
+  background-color: #272424;
+  text-transform: uppercase;
+  text-align: center;
+  height: 50px;
+  position: relative; }
+  .footer_brandname {
+    position: absolute;
+    left: 50%;
+    text-size: 30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer; }
+    .footer_brandname_text {
+      color: white; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   display: inline-block;
@@ -298,6 +315,7 @@ body {
   font-size: 16px;
   padding: 25px;
   text-align: center;
+  height: 500px;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   transition: all .2s; }
@@ -352,7 +370,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture-1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/kasol.jpg); }
     .card__picture-2 {
       background-image: linear-gradient(to right bottom, #25ee25, #065806), url(../img/nat-5.jpg); }
     .card__picture-3 {
