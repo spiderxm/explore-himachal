@@ -26,3 +26,20 @@
     padding: 150px 0;
     position: relative;
 }
+
+.section-book {
+    padding: 150px 0;
+    background-image: linear-gradient(to right bottom, #7ed56fc9, #28b485c2);
+}
+
+.book {
+    background-image: linear-gradient(105deg, rgba(white, .7) 0%, rgba(white, .7) 50%, rgba(blue, .0) 50%), url('../img/nat-10.jpg');
+    background-size: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba($color: #000000, $alpha: .3);
+    &__form {
+        width: 50%;
+        padding: 60px;
+    }
+}
